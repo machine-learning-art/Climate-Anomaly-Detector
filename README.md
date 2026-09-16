@@ -37,7 +37,7 @@ Climate Anomaly Detector is an end-to-end pipeline that:
 ### Install Dependencies
 
 ```bash
-pip install -r requirements.txt
+pip install numpy pandas requests matplotlib seaborn scipy scikit-learn keras torch
 ```
 
 ## Project Structure
