@@ -3,8 +3,6 @@ Plot trends module for visualizing climate anomaly detection results.
 
 This module provides functions to plot actual temperature data, model predictions,
 and identified anomalies from the model_application_results table.
-
-IMPROVED VERSION: Loads data once and creates all charts efficiently.
 """
 
 import pandas as pd
