@@ -2,7 +2,7 @@
 
 A machine learning-based system for detecting anomalies in climate temperature data using LSTM autoencoders.
 
-## 🌍 Overview
+## Overview
 
 Climate Anomaly Detector is an end-to-end pipeline that:
 - Fetches climate data from NOAA API or CSV files
@@ -11,7 +11,7 @@ Climate Anomaly Detector is an end-to-end pipeline that:
 - Detects anomalies based on reconstruction errors
 - Visualizes results with comprehensive plots
 
-## 📦 Features
+## Features
 
 ### Core Capabilities
 - **Data Fetching**: Retrieve climate data from NOAA API or local CSV files
