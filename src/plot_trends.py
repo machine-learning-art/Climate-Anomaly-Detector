@@ -427,6 +427,6 @@ if __name__ == "__main__":
 
     # Create comprehensive report
     print("Creating comprehensive report...")
-    report_results = plotter.create_comprehensive_report('climate_anomaly_detector/demo')
+    report_results = plotter.create_comprehensive_report('demo')
     print(f"Report created successfully. Plots saved to: {report_results['output_directory']}")
     print(f"Data records loaded: {report_results['data_records_loaded']}")

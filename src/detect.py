@@ -19,6 +19,9 @@ from keras.optimizers import Adam
 from keras.utils import plot_model
 #import tensorflow as tf
 
+# set random seed 
+keras.utils.set_random_seed(42)
+
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)

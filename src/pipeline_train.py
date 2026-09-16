@@ -339,9 +339,9 @@ if __name__ == "__main__":
     # Example configuration
     config = {
         'db_path': 'climate.db',
-        'model_path': 'climate_anomaly_detector/src/model/anomaly_model.h5',
-        'config_path': 'climate_anomaly_detector/src/configs/detector_config.json',
-        'csv_path': 'climate_anomaly_detector/demo/sample_demo.csv',
+        'model_path': 'src/model/anomaly_model.h5',
+        'config_path': 'src/configs/detector_config.json',
+        'csv_path': 'demo/sample_demo.csv',
         'start_date': '2022-01-01',
         'end_date': '2025-12-31',
         'epochs': 25,
