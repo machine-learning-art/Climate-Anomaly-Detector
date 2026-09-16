@@ -52,7 +52,7 @@ climate_anomaly_detector/
 │   ├── pipeline_predict.py   # Prediction pipeline for full datasets
 │   └── plot_trends.py        # Visualization of results
 ├── model/                    # Trained models and model artifacts
-│   └── anomaly_model.h5      # LSTM autoencoder model weights
+│   └── anomaly_model.keras   # LSTM autoencoder model weights
 ├── demo/                     # Demo data and examples
 ├── configs/                  # Configuration files
 └── climate.db                # SQLite database for storing data
