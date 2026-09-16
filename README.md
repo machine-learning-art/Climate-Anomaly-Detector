@@ -17,14 +17,14 @@ Climate Anomaly Detector is an end-to-end pipeline that:
 - **Data Fetching**: Retrieve climate data from NOAA API (under construction) or local CSV files
 - **Advanced Preprocessing**: Clean, normalize, and feature-engineer temperature data
 - **Anomaly Detection**: LSTM autoencoder-based detection using reconstruction errors
-- **Cross-Validation**: Time-series and seasonal cross-validation for robust evaluation
+- **Cross-Validation**: Time-series and seasonal (under construction) cross-validation for robust evaluation
 - **Visualization**: Interactive plots showing temperature trends and anomalies
 
 ### Technical Highlights
 - LSTM Autoencoder architecture for anomaly detection
 - Comprehensive data preprocessing pipeline
 - Time-series cross-validation support
-- Seasonal pattern analysis
+- Seasonal pattern analysis (under construction)
 - SQLite database integration
 - Keras/PyTorch backend with modern .keras format support
 
@@ -149,12 +149,12 @@ Data Source → Fetch → Preprocess → Train Model → Detect Anomalies → Vi
 - **LSTM Autoencoder**: Learns normal patterns in temperature data
 - **Reconstruction Error**: Identifies anomalies based on prediction errors
 - **Thresholding**: Automatically sets threshold using percentile method
-- **Cross-Validation**: Time-series and seasonal cross-validation support
+- **Cross-Validation**: Time-series and seasonal (under construction) cross-validation support
 
 ### 3. Training Pipeline (`pipeline_train.py`)
 - End-to-end training workflow
 - Cross-validation for robust model evaluation
-- Seasonal pattern analysis
+- Seasonal pattern analysis (under construction)
 - Comprehensive anomaly reporting
 
 ### 4. Prediction Pipeline (`pipeline_predict.py`)
