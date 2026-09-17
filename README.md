@@ -5,7 +5,7 @@ A machine learning-based system for detecting anomalies in climate temperature d
 ## Overview
 
 Climate Anomaly Detector is an end-to-end pipeline that:
-- Fetches climate data from NOAA API (under construction) or CSV files
+- Fetches climate data from NOAA API *(under construction)* or CSV files
 - Preprocesses and normalizes the data
 - Trains LSTM autoencoder models to learn normal temperature patterns
 - Detects anomalies based on reconstruction errors
@@ -14,17 +14,17 @@ Climate Anomaly Detector is an end-to-end pipeline that:
 ## Features
 
 ### Core Capabilities
-- **Data Fetching**: Retrieve climate data from NOAA API (under construction) or local CSV files
+- **Data Fetching**: Retrieve climate data from NOAA API *(under construction)* or local CSV files
 - **Advanced Preprocessing**: Clean, normalize, and feature-engineer temperature data
 - **Anomaly Detection**: LSTM autoencoder-based detection using reconstruction errors
-- **Cross-Validation**: Time-series and seasonal (under construction) cross-validation for robust evaluation
+- **Cross-Validation**: Time-series and seasonal *(under construction)* cross-validation for robust evaluation
 - **Visualization**: Interactive plots showing temperature trends and anomalies
 
 ### Technical Highlights
 - LSTM Autoencoder architecture for anomaly detection
 - Comprehensive data preprocessing pipeline
 - Time-series cross-validation support
-- Seasonal pattern analysis (under construction)
+- Seasonal pattern analysis *(under construction)*
 - SQLite database integration
 - Keras/PyTorch backend with modern .keras format support
 
@@ -130,7 +130,7 @@ report_results = plotter.create_comprehensive_report('demo')
 Data Source → Fetch → Preprocess → Train Model → Detect Anomalies → Visualize Results
 ```
 
-1. **Fetch**: Load data from NOAA API (under construction) or CSV files
+1. **Fetch**: Load data from NOAA API *(under construction)* or CSV files
 2. **Preprocess**: Clean, normalize, and feature-engineer the data
 3. **Train**: Build LSTM autoencoder on normal (non-anomalous) data
 4. **Detect**: Identify anomalies based on reconstruction errors
@@ -149,12 +149,12 @@ Data Source → Fetch → Preprocess → Train Model → Detect Anomalies → Vi
 - **LSTM Autoencoder**: Learns normal patterns in temperature data
 - **Reconstruction Error**: Identifies anomalies based on prediction errors
 - **Thresholding**: Automatically sets threshold using percentile method
-- **Cross-Validation**: Time-series and seasonal (under construction) cross-validation support
+- **Cross-Validation**: Time-series and seasonal *(under construction)* cross-validation support
 
 ### 3. Training Pipeline (`pipeline_train.py`)
 - End-to-end training workflow
 - Cross-validation for robust model evaluation
-- Seasonal pattern analysis (under construction)
+- Seasonal pattern analysis *(under construction)*
 - Comprehensive anomaly reporting
 
 ### 4. Prediction Pipeline (`pipeline_predict.py`)
@@ -171,7 +171,7 @@ The system generates several types of plots:
 2. **Reconstruction Errors**: Displays error distribution with anomaly markers
 3. **Error Distribution**: Histograms showing normal vs anomalous errors
 
-## 🔧 Configuration
+## Configuration
 
 Example configuration for the training pipeline:
 
