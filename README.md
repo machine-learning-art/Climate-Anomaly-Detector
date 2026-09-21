@@ -58,6 +58,75 @@ climate_anomaly_detector/
 └── climate.db                # SQLite database for storing data
 ```
 
+## API Configuration Setup
+
+### Creating api_config.yaml File
+
+To utilize the NOAA API data fetching functionality, create an `api_config.yaml` configuration file with API credentials.
+
+#### 1. Create the Configuration File
+
+Create a new file named `configs/api_config.yaml` in the project directory:
+
+```yaml
+# configs/api_config.yaml
+noaa:
+  api_token: "YOUR_NOAA_API_TOKEN_HERE"
+```
+
+Replace `"YOUR_NOAA_API_TOKEN_HERE"` with the actual NOAA API token.
+
+#### 2. Obtain a NOAA API Token
+
+1. Visit the [NOAA Climate Data Online (CDO) website](https://www.ncdc.noaa.gov/cdo-web/)
+2. Follow the directions to generate a token
+
+#### 3. File Location
+
+The system looks for the configuration file at:
+- `./configs/api_config.yaml` (relative to project root)
+- Optionally specify a custom path when creating the ClimateDataFetcher instance
+
+```python
+fetcher = ClimateDataFetcher(config_path="/custom/path/to/api_config.yaml")
+```
+
+#### 4. Configuration Format Details
+
+The YAML file should follow this structure:
+
+```yaml
+noaa:
+  api_token: "your_api_token_string"
+```
+
+- `api_token`: Your NOAA CDO API token (required)
+- The token should be a string containing alphanumeric characters and possibly special characters
+
+#### 5. Security Best Practices
+
+1. **Never commit API token** to version control
+2. Add `configs/api_config.yaml` to your `.gitignore` file:
+   ```
+   configs/api_config.yaml
+   ```
+
+3. Use environment variables for production deployments instead of hardcoding tokens
+
+#### 6. Verifying Your Configuration
+
+After creating the file, verify it is working by running:
+
+```python
+from fetch import ClimateDataFetcher
+
+# Test loading the configuration
+fetcher = ClimateDataFetcher()
+print(f"API token loaded: {fetcher.api_token is not None}")
+```
+
+The output should show `True` if the configuration file is properly set up.
+
 ## Usage
 
 ### 1. Data Fetching
