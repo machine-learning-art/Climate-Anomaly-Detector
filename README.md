@@ -78,7 +78,7 @@ Replace `"YOUR_NOAA_API_TOKEN_HERE"` with the actual NOAA API token.
 
 #### 2. Obtain a NOAA API Token
 
-1. Visit the [NOAA Climate Data Online (CDO) website](https://www.ncdc.noaa.gov/cdo-web/)
+1. Visit the [NOAA Climate Data Online (CDO) website](https://www.ncdc.noaa.gov/cdo-web/token)
 2. Follow the directions to generate a token
 
 #### 3. File Location
