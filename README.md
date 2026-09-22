@@ -139,9 +139,9 @@ fetcher = ClimateDataFetcher()
 fetcher.fetch_and_save(csv_path="demo/sample_demo.csv")
 
 # Option 2: Fetch from NOAA API (requires API token)
-# fetcher.fetch_and_save(station_id="GHCND:USW00023183",
-#                         start_date='2026-09-01',
-#                         end_date='2026-10-01')
+fetcher.fetch_and_save(station_id="GHCND:USW00023183",
+                        start_date='2026-09-01',
+                        end_date='2026-10-01')
 ```
 
 ### 2. Training Pipeline
